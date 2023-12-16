@@ -1,40 +1,38 @@
 {
-  "name": "audioplex",
+  "name": "strapi",
   "private": true,
-  "version": "1.0.0",
-  "main": "package.json",
-  "license": "UNLICENSED",
+  "version": "0.1.0",
+  "description": "A Strapi application",
   "scripts": {
-    "dev": "sanity dev",
-    "start": "sanity start",
-    "build": "sanity build",
-    "deploy": "sanity deploy",
-    "deploy-graphql": "sanity graphql deploy"
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
   },
-  "keywords": [
-    "sanity"
-  ],
+  "devDependencies": {},
   "dependencies": {
-    "@sanity/icons": "^2.6.0",
-    "@sanity/ui": "^1.8.3",
-    "@sanity/vision": "^3.21.3",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-is": "^18.2.0",
-    "sanity": "^3.21.3",
-    "styled-components": "^6.0.7"
+    "@strapi/plugin-cloud": "4.15.5",
+    "@strapi/plugin-i18n": "4.15.5",
+    "@strapi/plugin-users-permissions": "4.15.5",
+    "@strapi/strapi": "4.15.5",
+    "mysql": "2.18.1",
+    "pg": "^8.11.3",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "5.3.4",
+    "strapi-plugin-mux-video-uploader": "^2.7.0",
+    "strapi-plugin-netlify-deployments": "^2.0.2",
+    "styled-components": "5.3.3"
   },
-  "devDependencies": {
-    "@sanity/eslint-config-studio": "^3.0.1",
-    "@types/react": "^18.0.25",
-    "eslint": "^8.6.0",
-    "prettier": "^3.0.2",
-    "typescript": "^5.1.6"
+  "author": {
+    "name": "A Strapi developer"
   },
-  "prettier": {
-    "semi": false,
-    "printWidth": 100,
-    "bracketSpacing": false,
-    "singleQuote": true
-  }
+  "strapi": {
+    "uuid": "01ae1c2d-0cd5-4548-8f16-fa56669f2bff"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=20.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
 }
