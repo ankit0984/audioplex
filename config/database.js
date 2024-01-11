@@ -13,7 +13,7 @@ module.exports = ({ env }) => {
         user: env('DATABASE_USERNAME', 'strapi'),
         password: env('DATABASE_PASSWORD', 'strapi'),
         ssl:{
-          ca: env('DATABASE_SSL_CA', undefined),
+          ca: env('DATABASE_CA', undefined),
         }
       },
       pool: { min: env.int('DATABASE_POOL_MIN', 2), max: env.int('DATABASE_POOL_MAX', 10) },
