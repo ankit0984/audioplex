@@ -21,3 +21,5 @@ exports
 dist
 build
 .strapi-updater.json
+build
+.env.example
